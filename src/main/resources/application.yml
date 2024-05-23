@@ -1,0 +1,29 @@
+
+server:
+ port: 8888
+
+#cors:
+# originPatterns: http://localhost:4200,http://localhost:8888
+  
+#atom:
+#  app:
+#   jwtExpirationMs: 60000
+#   jwtRefreshExpirationMs: 120000
+#   jwtSecret: 867978979878978978978978978978978978978978978977654345678976545678
+#   jwtCookieName: bezkoder-jwt
+#   jwtRefreshCookieName: bezkoder-jwt-refresh
+ 
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jwt-oauth2_db?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: admin
+    password: 1234
+
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+    open-in-view: false
+  sql:
+    init:
+      mode: always  
