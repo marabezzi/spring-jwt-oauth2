@@ -2,9 +2,10 @@ server:
  port: 8888
 
 jwt:
- public:
-  key: classpath:app.pub
-  private: classpath:app.key
+  public:
+    key: classpath:app.pub
+  private:
+    key: classpath:app.key
 #cors:
 # originPatterns: http://localhost:4200,http://localhost:8888
   
